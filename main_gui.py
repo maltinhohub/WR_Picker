@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import filedialog, messagebox
 
 def readCSV(filepath):
-    df = pd.read_csv(filepath, delimiter=';', dtype=str)  # Alle Spalten als Strings lesen
+    df = pd.read_csv(filepath, delimiter=',', dtype=str)  # Alle Spalten als Strings lesen
     return df
 
 def filterCSV(df, filters):
